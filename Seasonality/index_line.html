@@ -77,7 +77,7 @@ var svg = d3.select("body")
 
 
 // Get the data
-d3.csv("stocks.csv", function(error, data) {
+d3.csv("d3_data.csv", function(error, data) {
     data.forEach(function(d) {
 		d.date = parseDate(d.date);
 		d.price = +d.price;
